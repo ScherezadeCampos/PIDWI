@@ -1,0 +1,93 @@
+
+body {
+    background-color: white; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+}
+
+
+.top-bar {
+    background-color: rgb(79, 134, 101); 
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+/
+.top-bar::after {
+    content: "";
+    display: block;
+    height: 2px; 
+    background-color: #000; 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+
+.logo{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+
+.footer-contacto {
+  background-color: #b2ccc0; 
+  padding: 20px 0;
+  text-align: center;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
+.icono-red-social {
+  width: 40px;
+  height: 40px;
+}
